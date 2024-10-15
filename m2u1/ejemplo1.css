@@ -1,0 +1,32 @@
+.caja {
+    /*background-color: blueviolet;*/
+    width: 300px;
+    height: 150px;
+    padding: 50px;
+    margin: 100px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border-radius: 20px 60px 20px 60px;
+    box-shadow: 20px 20px 20px rgb(173, 26, 85);
+    /* eje x , eje y , blur , color */
+    color: white;
+    font-family: "Fredoka", sans-serif;
+}
+
+.texto {
+    background-color: blueviolet;
+    width: 900px;
+    column-count: 4;
+    font-family: "Fredoka", sans-serif;
+    color: white;
+}
+
+
+.texto p {
+    margin: 20px;
+}
+
+h2,h1 {
+    font-family: "Fredoka", sans-serif;
+    color: rgb(255, 0, 183);
+}
