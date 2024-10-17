@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 33%;
+    color: white;
+    border: 3px solid black;
+}
+
+.main :first-child {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.main :nth-child(2) {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.main :last-child {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 20%;
+    height: 100%;
+}

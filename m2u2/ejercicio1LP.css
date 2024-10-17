@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    
+}
+
+.main :first-child {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 33%;
+    height: 33%;
+}
+
+.main :nth-child(2) {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 33%;
+    height: 33%;
+}
+
+.main :last-child {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 33%;
+    height: 33%;
+}
