@@ -1,0 +1,324 @@
+/* Fuentes
+
+font-family: "Playfair Display", serif;
+font-weight: 400;
+font-style: italic;
+
+.comfortaa-<uniquifier> {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
+font-family: "Poppins", serif;
+font-weight: 200;
+*/
+
+html, body {
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    background-color: #A19B9B;
+    margin: 0;
+    height: 100px;
+}
+
+.holder {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    background-color: rgb(75, 58, 41);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: rgb(232, 219, 219);
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 200;
+}
+
+nav ul li a:hover {
+    background-color: #A19B9B;
+    color: black;
+}
+
+nav ul li a.activo {
+    background-color: #A19B9B;
+    color: black;
+}
+
+main div {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 200;
+}
+
+footer {
+    background-color: rgb(75, 58, 41);
+    color: white;
+    padding: 5px 0;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*inicio home*/
+
+.foto {
+    display: flex;
+    width: 100%;
+    height: 250px; 
+    overflow: hidden; 
+}
+
+.foto img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+
+.contenidos {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.bienvenidos {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+
+.bienvenidos p {
+    font-size: 18px;
+}
+
+
+
+.testimonios {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 200;
+}
+
+.testimonios-secciones {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.testimonios-secciones div {
+    background-color: #A19B9B;
+    border-radius: 10px;
+    padding: 15px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+.testimonios-secciones h3 {
+    font-weight: bold;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.testimonios-secciones p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/*fin home*/
+
+
+/*inicio nosotros*/
+
+.historia p{
+    font-size: 18px;
+}
+
+.personas{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.persona{
+    border: 1px solid rgb(75, 58, 41);
+    border-radius: 5px;
+    flex: 1; 
+    margin: 0 10px; 
+    object-fit: cover; 
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.persona img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+.persona h5,
+.persona h6 {
+    margin: 0;
+    font-weight: normal;
+    color: rgb(75, 58, 41);
+}
+
+.persona h5{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.persona h6 {
+    color: #666;
+    font-size: 10px;
+}
+
+/*fin nosotros*/
+
+/*inicio servicios*/
+
+.servicio {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.servicio .info p {
+    font-size: 13px;
+}
+
+.servicio img {
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+}
+
+.servicio:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/*fin servicios*/
+
+/*inicio galeria*/
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.galeria img {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 2px;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+/*fin galeria*/
+
+/*inicio novedades*/
+
+.holdernov {
+    padding: 20px;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 200;
+}
+
+
+
+/*fin novedades*/
+
+/*inicio contactos*/
+
+.contacto {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto div {
+    width: 100%;
+    padding: 20px;
+}
+
+.datos ul li {
+    font-size: 13px;
+}
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p label {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 80px;
+}
+
+.formulario p:nth-child(4) {
+    align-items: start;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 150px;
+} 
+
+.formulario imput[type="submit"] {
+    background: #A19B9B;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+    color: white;
+    font-size: 16px;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    left: 5rem;
+    cursor: pointer;
+}
+
+.formulario imput[type="submit"]:hover {
+    background-color: #666;
+}
+
+/*fin contactos*/
