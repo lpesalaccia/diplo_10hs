@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+
+
+<body>
+    <script>
+        /* E1: Crear el código que dada una distancia determine el medio 
+        de transporte apropiado de acuerdo a las siguientes reglas:
+
+        0 a 1000 metros = pie
+        1000 a 10000 metros = bicicleta
+        10000 a 30000 metros = colectivo
+        30000 a 100000 metros = auto
+        +100000 = avion*/
+
+        const metros = 25000;
+        let  transporte = '';
+
+        if (metros > 0 && metros <= 1000) {
+            transporte = 'pie';
+        } else if (metros > 1000 && metros <= 10000) {
+            transporte = 'bicibleta'
+        } else if (metros > 10000 && metros <= 30000) {
+            transporte = 'colectivo'
+        } else if (metros > 1000 && metros <= 100000) {
+            transporte = 'auto'
+        } else if (metros > 100000) {
+            transporte = 'avion'
+        }
+
+        console.log('para ${metros} metros recomendados ir en ${transporte}');
+
+
+       /*Ejericio 2: Crear el código que reciba como 
+       parámetro un array de números y devuelva el mayor.*/ 
+
+        const numeros=[1,15,141,81,71,6,4548,4265,54,852];
+        let mayor=0;
+        for (let i=0; i<numeros.length; i++) {
+            if (numeros[i]>mayor) {
+                mayor=numeros[i];
+            }
+        }
+
+        console.log('el mayor de ' + numeros + 'es' + mayor);
+
+    </script>
+</body>
+</html>
